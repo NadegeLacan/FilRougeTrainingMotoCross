@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Training Moto Cross</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER du site web LOGO CREATION_COMPTE CONNEXION DECONNEXION -->
+    <header>
+        <img src="photos/logoFFM.jpg" alt="Logo FFM" />
+        <a href="choixCréationCompte.html" title="Créer un compte">Créer un compte</a>
+        <a href="connexion.html" title="Connexion">Se connecter</a>
+        <a href="deconnexion.html" title="Déconnexion">Se déconnecter</a>
+
+        <!--MENU HAUT DE PAGE-->
+        <nav>
+            <div class="dropDownMenuPilote">
+                <h4>PILOTES</h4>
+                <div class="dropDownMenuContentPilote">
+                    <a href="menuAccountRider.html">COMPTE</a>
+                    <a href="menuTrainingRider.html">ENTRAINEMENTS</a>
+                    <a href="connexion.html">CONNEXION</a>
+                </div>
+            </div>
+            <div class="dropDownMenuClub">
+                <h4>CLUBS</h4>
+                <div class="dropDownMenuContentClub">
+                    <a href="menuAccountClub.html">COMPTE</a>
+                    <a href="menuTrainingClub.html">ENTRAINEMENTS</a>
+                    <a href="connexion.html">CONNEXION</a>
+                </div>
+            </div>
+            <div class="dropDownMenuTraining">               
+                <a href="riderRegionSelection.html">
+                    <h4>CONSULTER LES ENTRAINEMENTS</h4>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    
+     <!-- ZONE INFO LISTE DES TERRAINS OUVERTS FRAME GAUCHE-->
+     <div class="frameLeft">
+        <h3>Terrains ouverts</h3>
+        <!--résultat requete BDD à récupérer la liste des terrains ouverts dans les 15 prochains jours-->
+    </div>
+
+    <!-- FORMULAIRE DE CREATION DE COMPTE CLUB -->
+    <div class="formRegisterAccount">
+        <h2>Création d'un Compte Club</h2>
+        <form method="POST" action="formRegisterClub">
+            <fieldset>
+                <legend>CLUB</legend>
+                <fieldset>
+                    <legend>Informations de connexion</legend>
+                    <label for=emailClub>Identifiant e-mail :</label>
+                    <input type="email" name="emailClub" id="emailClub" requiered/>
+                    <label for=pwdClub>Mot de passe :</label>
+                    <input type="password" name="pwdClub" id="pwdClub" minlenght=8 requiered/>
+                </fieldset>
+                <fieldset>
+                    <legend>Identité Club et Responsable</legend>
+                    <label for=nameClub>Nom du club:</label>
+                    <input type="text" name="nameClub" id="nameClub" requiered/>
+                    <label for=civilityRespClub>Civilité :</label>
+                    <input type="radio" name="civilityRespClub" id="civilityRespClubMr" checked/>
+                    <label for=civilityRespClub>Monsieur</label>
+                    <input type="radio" name="civilityRespClub" id="civilityRespClubMme" />
+                    <label for=civilityRider>Madame</label>
+                    <label for=nameRespClub>Nom :</label>
+                    <input type="text" name="nameRespClub" id="nameRespClub" requiered/>
+                    <label for=firstNameRespClub>Prénom :</label>
+                    <input type="text" name="firstNameRespClub" id="firstNameRespClub" requiered/>
+                </fieldset>
+                <fieldset>
+                    <legend>Adresse du terrain</legend>
+                    <label for=adressClub>Adresse :</label>
+                    <textarea rows=2 type="text" name="adressClub" id="adressClub" requiered></textarea>                   
+                    <label for=postalCodeClub>Code postal :</label>
+                    <input type="number" name="postalCodeClub" id="postalCodeClub" minlenght=5 requiered/>
+                    <label for=cityClub>Ville :</label>
+                    <input type="text" name="cityClub" id="cityClub" requiered/>
+                    <label for=telClub>Téléphone :</label>
+                    <input type="tel" name="telClub" id="telClub" requiered/>  
+                </fieldset>
+                <fieldset>
+                    <legend>Informations complémentaires</legend>            
+                    <label for=trackLenght>Longueur de la piste (en mètres):</label>
+                    <input type="number" name="trackLenght" id="trackLenght" requiered/>
+                    <label for=numberRiderMax>Nombre de pilotes maximum autorisé :</label>
+                    <input type="number" name="numberRiderMax" id="numberRiderMax" required/>
+                    <label for=kidRiderAllow>Pilotes Kids autorisés :</label>
+                    <input type="radio" name="kidRiderAllow" id="kidRiderAllowYes" checked/>
+                    <label for=kidRiderAllow>Oui</label>
+                    <input type="radio" name="kidRiderAllow" id="kidRiderAllowNo" checked/>
+                    <label for=kidRiderAllow>Non</label>
+                </fieldset>
+                <input type="reset" name="resetClub" id="resetClub" value="REINITIALISER"/>
+                <input type="submit" name="validationClub" id="validationClub" value="VALIDER"/>
+           </fieldset>
+        </form>
+    </div>
+
+    <footer>
+        <!-- FOOTER du site web CONDITION_GENERALES MENTIONS_LEGALES CONTACT ACCUEIL LIENS_SITES_EXTERIEUR -->
+           <ul>
+               <li><a href="conditionsGenerales.html">Conditions Générales</a></li>
+               <li><a href="mentionsLegales.html">Mentions Légales</a></li>
+               <li><a href="contactSupport.html">Contact support</a></li>
+               <li><a href="index.html">Accueil</a></li>
+               <li><a href="https://www.ffmoto.org/" target="_blank">Site internet FFM</a></li>
+               <li><a href="https://ffm.engage-sports.com/" target="_blank">Site internet Engage Sport</a></li>
+           </ul>
+       </footer>
+   </body>
+   </html>

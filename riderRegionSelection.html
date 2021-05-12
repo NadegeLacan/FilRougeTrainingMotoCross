@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Training Moto Cross</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER du site web LOGO CREATION_COMPTE CONNEXION DECONNEXION -->
+    <header>
+        <img src="photos/logoFFM.jpg" alt="Logo FFM" />
+        <a href="choixCréationCompte.html" title="Créer un compte">Créer un compte</a>
+        <a href="connexion.html" title="Connexion">Se connecter</a>
+        <a href="deconnexion.html" title="Déconnexion">Se déconnecter</a>
+
+        <!--MENU HAUT DE PAGE-->
+        <nav>
+            <div class="dropDownMenuPilote">
+                <h4>PILOTES</h4>
+                <div class="dropDownMenuContentPilote">
+                    <a href="menuAccountRider.html">COMPTE</a>
+                    <a href="menuTrainingRider.html">ENTRAINEMENTS</a>
+                    <a href="connexion.html">CONNEXION</a>
+                </div>
+            </div>
+            <div class="dropDownMenuClub">
+                <h4>CLUBS</h4>
+                <div class="dropDownMenuContentClub">
+                    <a href="menuAccountClub.html">COMPTE</a>
+                    <a href="menuTrainingClub.html">ENTRAINEMENTS</a>
+                    <a href="connexion.html">CONNEXION</a>
+                </div>
+            </div>
+            <div class="dropDownMenuTraining">               
+                <a href="riderRegionSelection.html">
+                    <h4>CONSULTER LES ENTRAINEMENTS</h4>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+     <!-- ZONE INFO LISTE DES TERRAINS OUVERTS -->
+    <div class="frameLeft">
+        <h3>Terrains ouverts</h3>
+        <!--résultat requete BDD à récupérer la liste des terrains ouverts dans les 15 prochains jours-->
+    </div>
+
+    <!--SELECTION PAR REGION POUR OBTENIR LA LISTE DES ENTRAINEMENTS OUVERTS-->
+    <!--envoyer région en paramètre de l'ouverture de TrainingList afin de ne selectionner que les terrains de la région choisie-->
+    <ul class="regionSelection">
+        <li><a href="trainingList.html">Auvergne-Rhône-Alpes</a></li>
+        <li><a href="trainingList.html">Bourgogne-Franche-Comté</a></li>
+        <li><a href="trainingList.html">Bretagne</a></li>
+        <li><a href="trainingList.html">Centre-Val de Loire</a></li>
+        <li><a href="trainingList.html">Corse</a></li>
+        <li><a href="trainingList.html">Grand Est</a></li>
+        <li><a href="trainingList.html">Hauts-de-France</a></li>
+        <li><a href="trainingList.html">Ile-de-France</a></li>
+        <li><a href="trainingList.html">Normandie</a></li>
+        <li><a href="trainingList.html">Nouvelle-Aquitaine</a></li>
+        <li><a href="trainingList.html">Occitanie</a></li>
+        <li><a href="trainingList.html">Pays de la Loire</a></li>
+        <li><a href="trainingList.html">Provence-Alpes-Côte d’Azur</a></li>        
+    </ul>
+
+    <footer>
+     <!-- FOOTER du site web CONDITION_GENERALES MENTIONS_LEGALES CONTACT ACCUEIL LIENS_SITES_EXTERIEUR -->
+        <ul>
+            <li><a href="conditionsGenerales.html">Conditions Générales</a></li>
+            <li><a href="mentionsLegales.html">Mentions Légales</a></li>
+            <li><a href="contactSupport.html">Contact support</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="https://www.ffmoto.org/" target="_blank">Site internet FFM</a></li>
+            <li><a href="https://ffm.engage-sports.com/" target="_blank">Site internet Engage Sport</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

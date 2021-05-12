@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Training Moto Cross</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER du site web LOGO CREATION_COMPTE CONNEXION DECONNEXION -->
+    <header>
+        <img src="photos/logoFFM.jpg" alt="Logo FFM" />
+        <a href="choixCréationCompte.html" title="Créer un compte">Créer un compte</a>
+        <a href="connexion.html" title="Connexion">Se connecter</a>
+        <a href="deconnexion.html" title="Déconnexion">Se déconnecter</a>
+
+        <!--MENU HAUT DE PAGE-->
+        <nav>
+            <div class="dropDownMenuPilote">
+                <h4>PILOTES</h4>
+                <div class="dropDownMenuContentPilote">
+                    <a href="menuAccountRider.html">COMPTE</a>
+                    <a href="menuTrainingRider.html">ENTRAINEMENTS</a>
+                    <a href="connexion.html">CONNEXION</a>
+                </div>
+            </div>
+            <div class="dropDownMenuClub">
+                <h4>CLUBS</h4>
+                <div class="dropDownMenuContentClub">
+                    <a href="menuAccountClub.html">COMPTE</a>
+                    <a href="menuTrainingClub.html">ENTRAINEMENTS</a>
+                    <a href="connexion.html">CONNEXION</a>
+                </div>
+            </div>
+            <div class="dropDownMenuTraining">               
+                <a href="riderRegionSelection.html">
+                    <h4>CONSULTER LES ENTRAINEMENTS</h4>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    
+     <!-- ZONE INFO LISTE DES TERRAINS OUVERTS FRAME GAUCHE-->
+     <div class="frameLeft">
+        <h3>Terrains ouverts</h3>
+        <!--résultat requete BDD à récupérer la liste des terrains ouverts dans les 15 prochains jours-->
+    </div>
+
+    <!-- FORMULAIRE DE CREATION DE COMPTE PILOTE -->
+    <div class="formRegisterAccount">
+        <h2>Création d'un Compte Pilote</h2>
+        <form method="POST" action="formRegisterRider">
+            <fieldset>
+                <legend>PILOTE</legend>
+                <fieldset>
+                    <legend>Informations de connexion</legend>
+                    <label for=emailRider>Identifiant e-mail :</label>
+                    <input type="email" name="emailRider" id="emailRider" requiered/>
+                    <label for=pwdRider>Mot de passe :</label>
+                    <input type="password" name="pwdRider" id="pwdRider" minlenght=8 requiered/>
+                </fieldset>
+                <fieldset>
+                    <legend>Identité pilote</legend>
+                    <label for=civilityRider>Civilité :</label>
+                    <input type="radio" name="civilityRider" id="civilityRiderMr" checked/>
+                    <label for=civilityRider>Monsieur</label>
+                    <input type="radio" name="civilityRider" id="civilityRiderMme" />
+                    <label for=civilityRider>Madame</label>
+                    <label for=nameRider>Nom :</label>
+                    <input type="text" name="nameRider" id="nameRider" requiered/>
+                    <label for=firstNameRider>Prénom :</label>
+                    <input type="text" name="firstNameRider" id="firstNameRider" requiered/>
+                    <label for=dateBirthRider>Date de naissance :</label>
+                    <input type="date" name="dateBirthRider" id="dateBirthRider" requiered/>
+                </fieldset>
+                <fieldset>
+                    <legend>Adresse</legend>
+                    <label for=adressRider>Adresse :</label>
+                    <textarea rows=2 type="text" name="adressRider" id="adressRider" requiered></textarea>                   
+                    <label for=postalCodeRider>Code postal :</label>
+                    <input type="number" name="postalCodeRider" id="postalCodeRider" minlenght=5 requiered/>
+                    <label for=cityRider>Ville :</label>
+                    <input type="text" name="cityRider" id="cityRider" requiered/>
+                    <label for=telRider>Téléphone :</label>
+                    <input type="tel" name="telRider" id="telRider" requiered/>  
+                </fieldset>
+                <fieldset>
+                    <legend>Informations complémentaires</legend>            
+                    <label for=licenceNumberRider>Numéro de licence FFM :</label>
+                    <input type="text" name="licenceNumberRider" id="licenceNumberRider" requiered/>
+                    <label for=representativeKidRider>Nom du responsable (pilotes mineurs uniquement) :</label>
+                    <input type="text" name="representativeKidRider" id="representativeKidRider"/>
+                    <label for=contactPersonRider>Personne à contacter :</label>
+                    <input type="text" name="contactPersonRider" id="contactPersonRider"/>
+                </fieldset>
+                <input type="reset" name="resetRider" id="resetRider" value="REINITIALISER"/>
+                <input type="submit" name="validationRider" id="validationRider" value="VALIDER"/>
+           </fieldset>
+        </form>
+    </div>
+
+    <footer>
+        <!-- FOOTER du site web CONDITION_GENERALES MENTIONS_LEGALES CONTACT ACCUEIL LIENS_SITES_EXTERIEUR -->
+           <ul>
+               <li><a href="conditionsGenerales.html">Conditions Générales</a></li>
+               <li><a href="mentionsLegales.html">Mentions Légales</a></li>
+               <li><a href="contactSupport.html">Contact support</a></li>
+               <li><a href="index.html">Accueil</a></li>
+               <li><a href="https://www.ffmoto.org/" target="_blank">Site internet FFM</a></li>
+               <li><a href="https://ffm.engage-sports.com/" target="_blank">Site internet Engage Sport</a></li>
+           </ul>
+       </footer>
+   </body>
+   </html>

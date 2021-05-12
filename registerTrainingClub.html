@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Training Moto Cross</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER du site web LOGO CREATION_COMPTE CONNEXION DECONNEXION -->
+    <header>
+        <img src="photos/logoFFM.jpg" alt="Logo FFM" />
+        <a href="choixCréationCompte.html" title="Créer un compte">Créer un compte</a>
+        <a href="connexion.html" title="Connexion">Se connecter</a>
+        <a href="deconnexion.html" title="Déconnexion">Se déconnecter</a>
+
+        <!--MENU HAUT DE PAGE-->
+        <nav>
+            <div class="dropDownMenuPilote">
+                <h4>PILOTES</h4>
+                <div class="dropDownMenuContentPilote">
+                    <a href="menuAccountRider.html">COMPTE</a>
+                    <a href="menuTrainingRider.html">ENTRAINEMENTS</a>
+                    <a href="connexion.html">CONNEXION</a>
+                </div>
+            </div>
+            <div class="dropDownMenuClub">
+                <h4>CLUBS</h4>
+                <div class="dropDownMenuContentClub">
+                    <a href="menuAccountClub.html">COMPTE</a>
+                    <a href="menuTrainingClub.html">ENTRAINEMENTS</a>
+                    <a href="connexion.html">CONNEXION</a>
+                </div>
+            </div>
+            <div class="dropDownMenuTraining">               
+                <a href="riderRegionSelection.html">
+                    <h4>CONSULTER LES ENTRAINEMENTS</h4>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    
+     <!-- ZONE INFO LISTE DES TERRAINS OUVERTS FRAME GAUCHE-->
+     <div class="frameLeft">
+        <h3>Terrains ouverts</h3>
+        <!--résultat requete BDD à récupérer la liste des terrains ouverts dans les 15 prochains jours-->
+    </div>
+
+    <!-- FORMULAIRE DE CREATION D'UN TRAINING -->
+    <div class="formRegisterTraining">
+        <h2>Création d'une ouverture à l'entrainement</h2>
+        <form method="POST" action="formRegisterTraining">
+            <fieldset>
+                <legend>TRAINING</legend>
+                <fieldset>
+                    <legend>Informations club</legend>
+                    <!--INSERER REQUETE BDD RECUP INFO DU CLUB-->
+                    <p>Afficher les infos identité du club requete BDD</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Informations sur l'ouverture</legend>
+                    <label for=dateTraining>Date de l'ouverture :</label>
+                    <input type="date" name="dateTraining" id="dateTraining" requiered/>
+                    <label for=openingHour>Heure d'ouverture de la piste :</label>
+                    <input type="time" name="openingHour" id="openingHour" required/>
+                    <label for=closingHour>Heure de fermeture de la piste :</label>
+                    <input type="time" name="closingHour" id="closingHour" required/>
+                    <label for=priceTraining>Prix de l'entrainement :</label>
+                    <input type="number" name="priceTraining" id="priceTraining" required/>
+                    <fieldset>
+                        <legend>Pilotes Kids acceptés</legend>                        
+                        <label for=kidAccept>Oui</label>
+                        <input type="radio" name="kidAccept" id="kidAcceptOK" checked/>
+                        <label for=kidAccept>Non</label>
+                        <input type="radio" name="kidAccept" id="kidAcceptKO" />
+                    </fieldset>
+                </fieldset>
+                <input type="reset" name="resetTraining" id="resetTraining" value="REINITIALISER"/>
+                <input type="submit" name="validationTraining" id="validationTraining" value="VALIDER"/>
+           </fieldset>
+        </form>
+    </div>
+
+    <footer>
+        <!-- FOOTER du site web CONDITION_GENERALES MENTIONS_LEGALES CONTACT ACCUEIL LIENS_SITES_EXTERIEUR -->
+           <ul>
+               <li><a href="conditionsGenerales.html">Conditions Générales</a></li>
+               <li><a href="mentionsLegales.html">Mentions Légales</a></li>
+               <li><a href="contactSupport.html">Contact support</a></li>
+               <li><a href="index.html">Accueil</a></li>
+               <li><a href="https://www.ffmoto.org/" target="_blank">Site internet FFM</a></li>
+               <li><a href="https://ffm.engage-sports.com/" target="_blank">Site internet Engage Sport</a></li>
+           </ul>
+       </footer>
+   </body>
+   </html>

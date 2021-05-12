@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Training Moto Cross</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER du site web LOGO CREATION_COMPTE CONNEXION DECONNEXION -->
+    <header>
+        <img src="photos/logoFFM.jpg" alt="Logo FFM" />
+        <a href="choixCréationCompte.html" title="Créer un compte">Créer un compte</a>
+        <a href="connexion.html" title="Connexion">Se connecter</a>
+        <a href="deconnexion.html" title="Déconnexion">Se déconnecter</a>
+
+        <!--MENU HAUT DE PAGE-->
+        <nav>
+            <div class="dropDownMenuPilote">
+                <h4>PILOTES</h4>
+                <div class="dropDownMenuContentPilote">
+                    <a href="menuAccountRider.html">COMPTE</a>
+                    <a href="menuTrainingRider.html">ENTRAINEMENTS</a>
+                    <a href="connexion.html">CONNEXION</a>
+                </div>
+            </div>
+            <div class="dropDownMenuClub">
+                <h4>CLUBS</h4>
+                <div class="dropDownMenuContentClub">
+                    <a href="menuAccountClub.html">COMPTE</a>
+                    <a href="menuTrainingClub.html">ENTRAINEMENTS</a>
+                    <a href="connexion.html">CONNEXION</a>
+                </div>
+            </div>
+            <div class="dropDownMenuTraining">               
+                <a href="riderRegionSelection.html">
+                    <h4>CONSULTER LES ENTRAINEMENTS</h4>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+     <!-- ZONE INFO LISTE DES TERRAINS OUVERTS -->
+    <div class="frameLeft">
+        <h3>Terrains ouverts</h3>
+        <!--résultat requete BDD à récupérer la liste des terrains ouverts dans les 15 prochains jours-->
+    </div>
+
+     <!-- ZONE DE CONNEXION -->
+     <div class="frameRight">
+        <form method="POST" action="formConnexion">
+            <fieldset>
+                <legend>CONNEXION</legend>
+                <label for=emailConnexion>Identifiant</label>
+                <input type="email" name="emailConnexion" id="emailConnexion" requiered/>
+                <label for=pwdConnexion>Mot de passe</label>
+                <input type="password" name="pwdConnexion" id="pwdConnexion" minlenght=8 requiered/>
+                <input type="submit" name="validationConnexion" id="validationConnexion" value="Connexion"/>
+                <a href="pwdForget.html">mot de passe oublié</a>
+            </fieldset>
+        </form>
+    </div>
+
+    <!--ZONE ACTUALITES INFOS CENTRE DE LA PAGE-->
+    <div class="frameCenter">
+        <h2>Actualité et Infos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam doloremque error, consectetur, similique libero amet aut facere reprehenderit, soluta cum sapiente quibusdam eos nihil impedit suscipit illo exercitationem sed qui.
+        </p>
+    </div>
+
+    <footer>
+     <!-- FOOTER du site web CONDITION_GENERALES MENTIONS_LEGALES CONTACT ACCUEIL LIENS_SITES_EXTERIEUR -->
+        <ul>
+            <li><a href="conditionsGenerales.html">Conditions Générales</a></li>
+            <li><a href="mentionsLegales.html">Mentions Légales</a></li>
+            <li><a href="contactSupport.html">Contact support</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="https://www.ffmoto.org/" target="_blank">Site internet FFM</a></li>
+            <li><a href="https://ffm.engage-sports.com/" target="_blank">Site internet Engage Sport</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
